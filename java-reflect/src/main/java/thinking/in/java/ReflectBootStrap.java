@@ -24,6 +24,7 @@ public class ReflectBootStrap {
             Class cl = Class.forName("thinking.in.java.reflect.SubClass");
             OprationClass.getFields(cl);
             OprationClass.getDeclaredFields(cl);
+            OprationClass.getMethods(cl);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
