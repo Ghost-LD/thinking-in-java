@@ -1,9 +1,7 @@
 package thinking.in.java;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import thinking.in.java.reflect.OprationClass;
 
 /**
  * 引导类
@@ -11,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @author yitian
  * @date 2020/5/4 16:40
  */
-@SpringBootApplication
-@RestController
+//@SpringBootApplication
+//@RestController
 public class ReflectBootStrap {
 
 
@@ -22,6 +20,13 @@ public class ReflectBootStrap {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(ReflectBootStrap.class,args);
+        try {
+            Class cl = Class.forName("thinking.in.java.reflect.SubClass");
+            OprationClass.getFields(cl);
+            OprationClass.getDeclaredFields(cl);
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
+
 }
