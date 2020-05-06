@@ -1,4 +1,4 @@
-package thinking.in.java;
+package thinking.in.java.reflect;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import thinking.in.java.reflect.OprationClass;
