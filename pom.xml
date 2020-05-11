@@ -19,6 +19,7 @@
 
     <modules>
         <module>java-reflect</module>
+        <module>java-io</module>
     </modules>
 
     <properties>
