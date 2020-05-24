@@ -20,6 +20,7 @@
     <modules>
         <module>java-reflect</module>
         <module>java-io</module>
+        <module>java-cglib</module>
     </modules>
 
     <properties>
