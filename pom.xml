@@ -21,6 +21,7 @@
         <module>java-reflect</module>
         <module>java-io</module>
         <module>java-cglib</module>
+        <module>java-design</module>
     </modules>
 
     <properties>
