@@ -22,6 +22,7 @@
         <module>java-io</module>
         <module>java-cglib</module>
         <module>java-design</module>
+        <module>java-tree</module>
     </modules>
 
     <properties>
