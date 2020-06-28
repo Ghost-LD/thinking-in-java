@@ -1,5 +1,8 @@
 package leetcode.ntree;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -42,4 +45,10 @@ public class NTreeNode {
     public void setChildren(List<NTreeNode> children) {
         this.children = children;
     }
+
+
+
+
+
+
 }

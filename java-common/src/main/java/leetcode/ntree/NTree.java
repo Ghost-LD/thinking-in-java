@@ -1,9 +1,6 @@
 package leetcode.ntree;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * n叉树
@@ -39,8 +36,47 @@ public class NTree {
         }
     }
 
+    /**
+     * 前序迭代
+     * @return
+     */
+    public List<Integer> getList(NTreeNode node) {
+        LinkedList<Integer> output = new LinkedList<>();
+        if(node == null){
+            return output;
+        }
+        LinkedList<NTreeNode> stack = new LinkedList<>();
+        stack.add(node);
+        while (!stack.isEmpty()){
+            NTreeNode nTreeNode1 = stack.pollLast();
+            output.add(nTreeNode1.getVal());
+            Collections.reverse(nTreeNode1.getChildren());
+            for (NTreeNode nTreeNode2: nTreeNode1.getChildren()){
+                stack.add(nTreeNode2);
+            }
+        }
+        return output;
+    }
 
-
-
+    /**
+     * 后序迭代
+     * @return
+     */
+    public List<Integer> getPostList(NTreeNode node) {
+        LinkedList<Integer> output = new LinkedList<>();
+        if(node == null){
+            return output;
+        }
+        LinkedList<NTreeNode> stack = new LinkedList<>();
+        stack.add(node);
+        while (!stack.isEmpty()){
+            NTreeNode nTreeNode1 = stack.pollLast();
+            output.addFirst(nTreeNode1.getVal());
+            for (NTreeNode nTreeNode2: nTreeNode1.getChildren()){
+                stack.add(nTreeNode2);
+            }
+        }
+        return output;
+    }
 
 }
