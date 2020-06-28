@@ -11,4 +11,6 @@ public class Factory {
     public static <T> T instance(Class<T> tClass) throws IllegalAccessException, InstantiationException {
         return tClass.newInstance();
     }
+
+
 }

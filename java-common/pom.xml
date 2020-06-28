@@ -11,6 +11,12 @@
 
     <groupId>thinking-in-java</groupId>
     <artifactId>java-common</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>

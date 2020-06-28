@@ -9,8 +9,12 @@ import java.lang.reflect.Method;
  * @author yitian
  * @date 2020/5/4 17:46
  */
-public class OprationClass {
+public final class OprationClass {
 
+
+    public static void d(){
+        System.out.println("111111");
+    }
 
     /**
      * 获取所有public 权限的变量 包括子类和父类继承的

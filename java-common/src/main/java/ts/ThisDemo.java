@@ -1,5 +1,7 @@
 package ts;
 
+import java.math.BigDecimal;
+
 /**
  * TODO
  *
@@ -16,6 +18,14 @@ public class ThisDemo {
         System.out.println(userInfo);
 //        System.out.println(userInfo.getName() +"_"+userInfo.getAge());
 //        System.out.println(userInfo.getx());
+
+        String s = "2.75";
+        System.out.println(Float.valueOf(s));
+
+        int i = 1;
+        i+=1;
+        i = i+1;
+        System.out.println(i);
 
     }
 

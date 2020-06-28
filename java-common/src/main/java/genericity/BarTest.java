@@ -17,15 +17,13 @@ public class BarTest {
         try {
 
             IMessage iMessage = Factory.instance(IMessageImpl.class);
+            Factory.instance(Message.class);
             iMessage.send();
-
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (InstantiationException e) {
             e.printStackTrace();
         }
-
-
     }
 
     public static Message<?> fun(Message<?> msg){
